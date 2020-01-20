@@ -1,7 +1,4 @@
-const os = require('os');
 const fs = require('fs');
-
-const data = 'dupa';
 
 const gender = ['F', 'M'];
 const maleNames = ['Bob', 'Stephen', 'Mark', 'Penn'];
@@ -13,7 +10,6 @@ const randChoice = (arr) => {
   const randomNumber = Math.floor(Math.random() * arr.length);
   return arr[randomNumber];
 };
-
 
 for (i = 0; i < 20; i++) {
   let personsName = '';
@@ -45,4 +41,3 @@ fs.writeFile('outputfile.txt', peopleJSON, (err) => {
   if (err) throw err;
   console.log('The file has been saved!');
 });
-
